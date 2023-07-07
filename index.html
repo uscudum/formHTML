@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <!-- Todo el contenido del formulario lo concentramos en la etiqueta form -->
+    <!-- Action="#" nos va a redirigir a la misma página, mientras que method="get" dejará visible la info enviada -->
+    <form action="#" method="get">
+        <!-- fielset permite agrupar un conjunto de elementos -->
+        <fieldset>
+            <!-- legend permite establecer una leyenda a esa agrupación establecida -->
+            <legend>Opinión del curso</legend>
+            <!-- Etiqueta (label) Nombre: vinculada con el input de tipo texto de id="name"-->
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="nombre" placeholder="Guillermo" size="40%">
+            <br><br>
+            <!-- Etiqueta (label) Apellido: vinculada con el input de tipo texto de id="lastname"-->
+            <label for="lastname">Apellido:</label><br>
+            <input type="text" id="lastname" name="apellido" size="40%">
+            <br><br>
+            <!-- Etiqueta Valoración del curso: sin ningún vínculo-->
+            <label>Valoración del curso</label><br>
+            <!-- Botones de radio vinculados por sus id con sus correspondientes etiquetas -->
+            <!-- Todos los radios tienen el mismo name, eso permite a que el usuario pueda seleccionar solo uno de ellos-->
+            <input type="radio" id="r1" name="valoración" value="1" checked><label for="r1">1</label>
+            <input type="radio" id="r2" name="valoración" value="2"><label for="r1">2</label>
+            <input type="radio" id="r3" name="valoración" value="3"><label for="r1">3</label>
+            <input type="radio" id="r4" name="valoración" value="4"><label for="r1">4</label>
+            <input type="radio" id="r5" name="valoración" value="5"><label for="r1">5</label>
+            <br><br>
+            <!-- Etiqueta ¿Qué aprendimos hoy? sin vínculo-->
+            <label>¿Qué aprendimos hoy?</label><br>
+            <!-- Casillas de verificación vinculadas por sus id con sus respectivas etiquetas-->
+            <input type="checkbox" id="chkHTML" name="lenguaje" value="HTML"><label for="chkHTML">HTML</label>
+            <input type="checkbox" id="chkCSS" name="lenguaje" value="CSS" checked><label for="chkCSS">CSS</label>
+            <input type="checkbox" id="chkJS" name="lenguaje" value="JS"><label for="chkJS">JS</label>
+            <br><br>
+            <!-- Área de texto -->
+            <textarea name="" id="" cols="40" rows="10">Ingrese un comentario</textarea>
+            <br><br>
+            <!-- Botón de entrega -->
+            <input type="submit" value="OK" style="width: 100px;">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
